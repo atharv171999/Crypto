@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
   position: relative;
   width: 100vw;
-  height: 3598px;
+  height: 210vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #041334;
@@ -16,7 +16,7 @@ body {
 }
 header {
   position: absolute;
-  width: auto;
+  width: 100%;
   left: 0%;
   right: 0.28%;
   top: 0%;
@@ -30,8 +30,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 40px;
-  gap: 200px;
+  padding: 1.2% 2%;
+  gap: 12%;
 
   position: absolute;
   left: 6.11%;
@@ -39,6 +39,7 @@ header {
   top: 13%;
   bottom: 13.37%;
 }
+
 .logo {
   width: 30%;
   height: 33.63px;
@@ -61,7 +62,7 @@ header {
   justify-content: space-between;
   list-style: none;
   color: white;
-  font-size: 100%;
+  font-size: 1.2vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -71,9 +72,15 @@ header {
 
   color: #ffffff;
 }
+.search-bar img {
+  width: 100%;
+  height: 85%;
+}
 .content {
+  width: 80%;
+  height: 2.3%;
   position: absolute;
-  left: 7.2%;
+  left: 9.2%;
   right: 27.15%;
   bottom: 91.69%;
   color: #ffffff;
@@ -82,20 +89,25 @@ header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.content-li1{
-    font-size: 150%
+.content-line1 {
+  font-size: 1.5vw;
+  letter-spacing: 0.01vw;
 }
-.content-li2{
-    font-size: 125%
+.content-line2 {
+  font-size: 1.2vw;
+  margin-top: 0.7%;
+  letter-spacing: 0.1vw;
 }
-.content-li2 .green-num{
-    color: #14ff00
+
+.green-num {
+  color: #14ff00;
 }
-.content-li2 .red-num{
-    color: #ff0000
+.red-num {
+  color: #ff0000;
 }
 .crypto-chart {
-  width: 82.5%;
+  overflow: auto;
+  width: 100%;
   height: 24.3%;
   align-items: flex-start;
   padding: 0px;
@@ -104,48 +116,50 @@ header {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   position: absolute;
-  left: 8.38%;
-  right: 8.03%;
   top: 10.42%;
   bottom: 65.24%;
 }
-.table1 {
-  font-size: 135%;
-  width: 98.5%;
-  height: 6%;
-  color: #ffffff;
-  border-bottom: 16px solid #041334;
-}
-td {
-  border-top: 14px solid #041334;
-  border-bottom: 14px solid #041334;
-}
 .crypto-logo {
-  font-size: 135%;
+  position: relative;
+  left: 8%;
+  font-size: 1.2vw;
   font-weight: 700;
 }
 .table2 {
-  font-size: 135%;
-
-  width: 100%;
-  height: 94%;
+  border-collapse: collapse;
+  font-size: 1.2vw;
+  width: 79.5%;
+  height: 48vw;
+  position: absolute;
+  /* top: 3%; */
+  left: 10.38%;
+  right: 8.03%;
   color: #ffffff;
+}
+.table2 thead th {
+  background-color: #041334;
+  position: sticky;
+  top: 0;
 }
 .table2-row {
   height: 40px;
 }
 .name {
-  width: 24%;
+  width: 18%;
+  height: 10%;
   text-align: start;
 }
 .price,
 .chart,
 .change {
-  width: 19.6%;
+  width: 15.6%;
+  height: 10%;
+
   text-align: center;
 }
 .market {
-  width: 18%;
+  width: 13%;
+  height: 10%;
   text-align: end;
 }
 .name img {
@@ -157,9 +171,15 @@ td {
   justify-content: flex-center;
   align-items: center;
 }
+.chart img {
+  width: 30%;
+  height: 40%;
+}
 .crypto-short {
   color: rgba(133, 133, 133, 1);
-  margin-left: 7%;
+  /* margin-left: 7%; */
+  position: relative;
+  left: 14%;
   font-size: 100%;
   font-weight: 400;
 }
@@ -173,8 +193,7 @@ td {
   bottom: 61.99%;
 }
 button {
-  font-size: 150%;
-  font-weight: 700;
+  font-size: 1.2vw;
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -229,6 +248,7 @@ button {
   background-color: rgba(15, 21, 53, 1);
 }
 .submap-logo img {
+  width: 6%;
   position: absolute;
   top: 38%;
   left: 5%;
@@ -270,8 +290,10 @@ button {
   top: 64.33%;
   bottom: 17.1%;
 }
-.reason div p{
-    margin-top: 0px; font-size: 2.5vw; font-weight: 600
+.reason div p {
+  margin-top: 0px;
+  font-size: 2.5vw;
+  font-weight: 600;
 }
 .reason-content {
   width: 43%;
@@ -292,12 +314,15 @@ button {
   opacity: 0.5;
 }
 
-
 .subreason-content {
   width: 100%;
   height: 33.5%;
   display: flex;
   justify-content: space-between;
+}
+.subreason-content img {
+  width: 100%;
+  height: 20%;
 }
 .sub-subreason-content {
   width: 93%;
@@ -326,130 +351,143 @@ button {
   width: 100%;
   height: 20%;
 }
-.graph-image img{
-    width: 100%;
-    height: 100%;
+.graph-image img {
+  width: 100%;
+  height: 100%;
 }
 .portfolio {
-    
-    box-sizing: border-box;
-  background: linear-gradient(180.04deg, rgba(4, 19, 52, 0.78) -3.16%, rgba(15, 37, 84, 0.62) 99.42%);
+  box-sizing: border-box;
+  background: linear-gradient(
+    180.04deg,
+    rgba(4, 19, 52, 0.78) -3.16%,
+    rgba(15, 37, 84, 0.62) 99.42%
+  );
   width: 29%;
   height: 93%;
   position: absolute;
   left: 61.46%;
   top: 7%;
   opacity: 0.5;
-  border-radius: 50px;
+  border-radius: 5vw;
   border: 2px solid #142346;
-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
-.portf-heading{
-    width: 100%;
-    height: 16%;
-    text-align: center;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+.portf-heading {
+  width: 100%;
+  height: 16%;
+  text-align: center;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
-.portf-heading h3{
-    font-size: 1.3vw;
-    opacity: 1.5;
-    color: #ffffff;
-    position: relative;
+.portf-heading h3 {
+  font-size: 1.3vw;
+  opacity: 1.5;
+  color: #ffffff;
+  position: relative;
+  top: 38%;
 }
-.portf-content{
-    font-size: 1vw;
-    margin-top: 5%;
-    width: 100%;
-    height: 84%;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+.portf-content {
+  font-size: 1vw;
+  width: 100%;
+  height: 84%;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
-.portf-subcontent{
-    column-gap: 24px;
-    width: 100%;
-    height: 17.5%;
-    display: flex;
-    justify-content: center;
+.portf-subcontent {
+  column-gap: 5%;
+  width: 100%;
+  height: 17.5%;
+  display: flex;
+  justify-content: center;
 }
-.portf-image{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 20%;
-
+.portf-image {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
 }
-.portf-image img{
-    margin-top: 9%;
-    width: 75%;
-    height: 75%;
+.portf-image img {
+  margin-top: 0;
+  width: 75%;
+  height: 94%;
 }
-.portf-imagecontent{
-    height: 100%;
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
+.portf-imagecontent {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
 }
-footer{
-    color: #ffffff;
-    display: flex;
-    background-color: rgba(0, 9, 42, 1);
-    width: 100%;
-    height: 13%;
-position: absolute;
-left: 0.28%;
-right: 0%;
-top: 85.49%;
-bottom: 1.04%;
+.portf-imagecontent img {
+  width: 20%;
+  height: 30%;
 }
-.footer-logo{
-    width: 39%;
-  height: 40px;
+footer {
+  color: #ffffff;
+  display: flex;
+  background-color: rgba(0, 9, 42, 1);
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  left: 0.28%;
+  right: 0%;
+  top: 85.49%;
+  bottom: 1.04%;
 }
-.footer-logo img{
-    width: 100%;
+.footer-logo {
+  width: 39%;
+  height: 14%;
+  position: relative;
+  left: 20%;
+}
+.footer-logo img {
+  width: 100%;
   height: 100%;
 }
-.footer-details{
-    height: 70%;
-    width: 50%;
-    position: relative;
-    left: 8%;
-    top: 21%;
+.footer-details div p {
+  position: relative;
+  left: 20%;
 }
-.footer-details p{
-    font-size: 1.4vw;
+.footer-details {
+  height: 70%;
+  width: 50%;
+  position: relative;
+  top: 21%;
 }
-.footer-terms{
-    column-gap: 80px;
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    height: 70%;
-    position: relative;
-    top: 21%;
+.footer-details p {
+  font-size: 1.4vw;
 }
-.company,.support,.socials{
-    width: 33.3%;
-    height: 100%;
+.footer-terms {
+  column-gap: 6vw;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 70%;
+  position: relative;
+  top: 21%;
 }
-.footer-terms h3{
-    font-size: 1.6vw;
-    margin-top: 0;
+.company,
+.support,
+.socials {
+  width: 33.3%;
+  height: 100%;
 }
-.footer-terms p{
-    font-size: 1.4vw;
-    margin-top: 15%;
+.footer-terms h3 {
+  font-size: 1.6vw;
+  margin-top: 0;
 }
-.closure{
-    width: 25%;
-    height: 1%;
-    font-size: 1vw;
-    /* background-color: red; */
-    color: #ffffff;
-    position: absolute;
-left: 38.86%;
-right: 40.51%;
-top: 98.2%;
-bottom: 0%;
+.footer-terms p {
+  font-size: 1.4vw;
+  margin-top: 15%;
+}
+.closure {
+  width: 25%;
+  height: 1%;
+  font-size: 1vw;
+  /* background-color: red; */
+  color: #ffffff;
+  position: absolute;
+  left: 39.86%;
+  right: 40.51%;
+  top: 98.2%;
+  bottom: 0%;
 }
