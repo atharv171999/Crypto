@@ -73,8 +73,11 @@ header {
   color: #ffffff;
 }
 .search-bar img {
-  width: 100%;
-  height: 85%;
+  width: 2%;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    height: 35%;
 }
 .content {
   width: 80%;
